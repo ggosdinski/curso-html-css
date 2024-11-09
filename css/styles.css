@@ -1,8 +1,37 @@
-.faltante{
+/* .faltante{
     color: red;
 }
 
 #ingrediente-secreto{
     color: blue;
+}
+
+ */
+
+h1 {
+    text-align: center;
+    /* Centra el texto dentro de su contenedor */
+}
+
+ p {
+    color: grey;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+    text-decoration: line-through;
+   /*  Agrega una linea de tachado */
+    line-height: 1.4;
+    /* Distancia entre las lineas */
+    letter-spacing: 4px;
+    /* Esto hace que el espacio entre las letras se modifique. Se usa bastante en botones */
+    text-transform: capitalize;
+    /* Permite convertir el texto a mayuscula, capitalize, etc */
+
+}
+
+a {
+    text-decoration: none;
 }
 
