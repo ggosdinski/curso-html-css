@@ -1,8 +1,8 @@
-h1{
-    color: blue;
+.faltante{
+    color: red;
 }
 
-p{
-    color: red;
+#ingrediente-secreto{
+    color: blue;
 }
 
