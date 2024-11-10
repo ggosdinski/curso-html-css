@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.card {
+    background-color: coral;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    /* para centrar horizontalmente */
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+h1 {
+    padding-top: 10px;
+    font-size: 22px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1px ;
+}
+
+p {
+    font-size: 10px;
+    padding: 20px;
+    background-color: lightcoral;
+    text-align: justify;
+}
