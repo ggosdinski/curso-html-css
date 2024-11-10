@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+}
+
+.box {
+/*     width: 100px;
+    height: 100px; */
+
+    /* RGBA*/
+    background-color: rgba(0, 137, 148, 0.58);
+    /*
+    Se pueden probar combinaciones en la web rgba Picker.
+    El ultimo factor es la opacidad, es decir, que tan transparente es.  */
+
+    /* HEXADECIMAL */
+    /* background-color: #00ff00; */
+  /*   Se divide en RGB como el anterior. Los primeros dos digitos corresponden al rojo, los segundos al verde y los ultimos al azul. FF es el 100%, equivalente al 255 del RGB. El AA es lo contrario.*/
+
+    margin: 20px;
+    text-align: center;
+    padding: 20px 50px;
+    margin-left: 100px;
+    color: #fff;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    border-top: 4px solid  white;
+    border-radius: 10px;
+}
+
