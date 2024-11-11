@@ -1,0 +1,55 @@
+body {
+    background-color: gray;
+    margin: 0 auto;
+    /* Esto me sirve para centrar todo el contenido dentro del body*/
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+    text-align: justify;
+    max-width: 1100px;
+}
+
+.box {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    background-color: #f3a5;
+    /* 
+    El ultimo parametro controla la opacidad 
+    */
+    background-image: url("https://images.pexels.com/photos/69314/pexels-photo-69314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    /*
+    Con esta propiedad estamos cambiando el fondo del DIV. Recordar que no es una imagen, es un DIV. Solo estamos cambiando el fondo.
+    */
+    background-size: cover;
+    /*
+    Si usamos 100% esta propiedad hacer que la imagen se adapte al 100% del ancho total del contenedor. 
+
+    Si usamos contain, hace que la imagen se adapte y entre en el contenedor(no solo a lo ancho).
+
+    Si usamos cover, es la mejor opcion para que una imagen se adapte correctamente a su contenedor. Se puede complementar con la propiedad background-position y darle los valores de top, right, botom y left según convenga.
+    */
+    background-position: bottom;
+    background-attachment: fixed;
+    /*
+    
+    Ejemplo de uso de esta propiedad en Fixed: https://www.youtube.com/watch?v=ELSm-G201Ls&ab_channel=SoyDalto  5:01
+    
+    SHORTHAND
+    Podemos usar background y evitarnos usar todas las demás propiedades.
+    Background tiene estos parametros (imagen position / size attachment color.
+    En este caso quedaria asi:
+
+    background: url("https://images.pexels.com/photos/69314/pexels-photo-69314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") bottom / cover fixed #f3a5;
+
+    VER SEGUNDO DIV DONDE USO ESTE SHORTHAND
+    */
+
+}
+
+.box2 {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    background: url("https://images.pexels.com/photos/69314/pexels-photo-69314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") bottom / cover fixed #f3a5;
+}
