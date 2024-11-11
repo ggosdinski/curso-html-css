@@ -1,35 +1,52 @@
 body {
-    background-color: black;
+    background-color: #fff;
     color: white;
     font-family: sans-serif;
+    text-align: center;
 }
 
 .card {
-    background-color: coral;
+    background-color: rgba(48, 146, 172, 0.8);
     text-align: center;
     width: 300px;
     margin: auto;
     /* para centrar horizontalmente */
-    margin-top: 20px;
+    margin-top: 50px;
     border-radius: 10px;
-    border: 2px solid white;
+    padding: 20px;
+    box-shadow: 0px 0px 35px #0006;
+    display: inline-block;
+    margin: 10px;
 }
 
-h1 {
-    padding-top: 10px;
+.red_card{
+    background-color: rgba(221, 37, 22, 0.8);
+}
+
+.green_card{
+    background-color:rgba(14, 196, 57, 0.8);
+}
+
+.card_title {
     font-size: 22px;
     margin: 0;
 }
 
-h2 {
-    font-size: 14px;
+.card_description {
+    font-size: 13px;
     font-weight: 100;
-    letter-spacing: 1px ;
+    letter-spacing: 2px ;
+    margin: 10px 0px 20px 0px;
 }
 
-p {
+.card_content {
     font-size: 10px;
-    padding: 20px;
-    background-color: lightcoral;
     text-align: justify;
+    margin-bottom: 0;
+}
+
+.card_img{
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 45px #0006;
 }
