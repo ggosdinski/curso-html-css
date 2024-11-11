@@ -1,0 +1,35 @@
+body {
+    background-color: red;
+    margin: 0 auto;
+}
+
+.box {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(black, transparent);
+    /*
+    Los gradientes se pueden agregar con la propiedad background o background image.
+    
+    Linear gradiente requiere dos colores para crear el degradado. 
+    Si queremos que el degradado vaya en otra direccion por ejemplo, hacia la derecha. solo se pone to right como primer parametro de la funcion. 
+
+    Se pueden agregar más de dos colores, todos los que necesitemos.
+
+    Tambien existe el radial-gradient que agrega una especie de viñeta. 
+    */
+    
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.container{
+    text-align: center;
+    margin-left: 40px;
+}
