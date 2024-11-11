@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img {
+    width: 150px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px #F82;
+}
+
+.box {
+    padding: 20px;
+    width: 350px;
+    /* height: 400px; */
+    background: #e2e2e2;
+    margin: auto;
+    /* Esto sirve para centrar horizontalmente el DIV*/
+    margin-top: 50px;
+    box-shadow: 0 0 50px #0007;
+    /*
+    El primer parametro es cuantos px queremos que se corra la sombra horizontalmente osea, hacia la derecha. 
+    El segundo parametro se refiere a cuanto se corre hacia abajo (vertical).
+    El tercer parametro, es el desenfoque de la sombre (difuminado)
+    El cuarto parametro, es cuanto queremos que la sombre se expanda.
+    Por ultimo pide el color.
+    */
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #0007;
+    border-radius: 12px;
+}
+
+h2 {
+   /*  text-align: center; */
+    margin-bottom: 25px;
+    /* padding: 10px; */   
+     color: #999;
+     font-weight: 100;
+     letter-spacing: 5px;
+     text-shadow: 0 0 1px #f82;
+    
+}
+
+p {
+    line-height: 1.4;
+    font-size: 14px;
+    text-shadow: 0 0 5px #f82;
+    text-align: justify;
+    /*
+    Text-shadow funciona igual pero no permite el cuarto parametro, es decir, la expansión. Todo lo demás es igual.
+    */
+}
+
+/*
+
+PROPIEDAD FILTER : DROP-SHADOW();
+EJEMPLO: https://youtu.be/ELSm-G201Ls?si=Wg-dxr5TNT8ekEyA&t=19677
+
+*/
