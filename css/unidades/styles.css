@@ -1,0 +1,49 @@
+div {
+    background-color: #ededed;
+    padding: 20px;
+    font-family: sans-serif;
+    border-left:  5px solid #999;
+    font-size: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+span {
+    color: #999;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+p {
+    color: #555;
+    font-size: 0.5em;
+    /* Si yo dejo que el font-size sea de un EM, voy a tener una tamaño de 30px ya que ese es el valor del elemento padre (ver div)*/
+}
+
+/* 
+Unidades Absolutas.
+Existen centimetros, milimetros, etc, junto con los pixeles que son medidas absolutas. Se usan cuando necesitamos tener mayor control y ser precisos pero no son la mejor opcion para los diseños responsives. 
+
+
+Unidades Relativas.
+Dependen de otro valor (el tamaño fuente, el contenedor, etc)
+Son comunes los %. El % se refiere siempre a su contenedor pero no se usan % en margenes, padding ni tamaño de letras.
+
+EM, 
+Un EM vale lo mismo que el font-size del elemento padre. 
+(ver comentarios en p).
+Si el padre no tiene un tamaño definido, va a buscar al siguiente elemento padre hasta que encuentre el valor referencial. En ultima instancia, si no hay ningún padre con el font-size definido, se le da el valor por defecto que son 16px.
+
+REM, 
+Hace lo mismo que EM pero en lugar de buscar al elemento padre, va a buscar al elemento raiz que es HTML. 
+
+VIEWPORT.
+Toma como referencia el tamaño del viewport disponible. Aplica tanto para altura (VH) como para ancho (VW)
+
+https://www.youtube.com/watch?v=ELSm-G201Ls&ab_channel=SoyDalto
+
+
+*/
