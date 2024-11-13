@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa con Geolocation API</title>
+    <!-- Incluir Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 100vh; /* El mapa ocupará toda la altura de la ventana */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Mi Ubicación en el Mapa</h1>
+<div id="map"></div>
+
+<!-- Incluir Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+    // Verificar si la Geolocation API está disponible en el navegador
+    if ("geolocation" in navigator) {
+        // Obtener la posición del usuario
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+
+                // Crear el mapa centrado en la ubicación del usuario
+                const map = L.map('map').setView([latitude, longitude], 13);
+
+                // Agregar el tile layer de OpenStreetMap
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 18,
+                    attribution: '© OpenStreetMap'
+                }).addTo(map);
+
+                // Añadir un marcador en la ubicación del usuario
+                L.marker([latitude, longitude]).addTo(map)
+                    .bindPopup('Estás aquí')
+                    .openPopup();
+            },
+            (error) => {
+                alert(`Error al obtener la ubicación: ${error.message}`);
+            }
+        );
+    } else {
+        alert("Geolocation API no está disponible en tu navegador.");
+    }
+</script>
+</body>
+</html>
