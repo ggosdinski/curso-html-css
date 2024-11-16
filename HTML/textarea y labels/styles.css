@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #eee;
+    background-color: #222;
+}
+
+form {
+    background-color: transparent;
+    padding: 20px 0;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 35px #fff2;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.form_input{
+    padding: 6px 20px ;
+    /* border: 2px solid red; */
+    
+}
+
+input, textarea {
+    /*Le damos los mismos estilos al textarea*/
+    width: 100%;    
+    box-sizing: border-box;
+    /*Recordar que esto elimina cualquier scroll horizontal que se genere*/
+    padding: 6px 8px;
+    border: none;
+    border: 1px solid #666;
+    border-radius: 6px;
+    box-shadow: 0px 0px 15px #0001;
+    background-color: transparent;
+    color: #eee;
+}
+
+/*Estilos especificos para el textarea*/
+textarea {
+    min-width: 100%;
+    resize: vertical;
+    /*Esto permite que el textarea pueda cambiar de tamaño solo en el eje vertical. Tiene otra propiedad que se llama both, que permite el resize tanto vertical como horizontal. La última opción es NONE en donde no va a permitir que se redimensione el elemento */
+    min-height: 100px;
+    /*Altura mínima*/
+  
+    /*Altura máxima*/
+    font-family: sans-serif;
+    /*El elemento tiene su propia tipografia por defecto, por lo que si queremos que sea igual que el resto, hay que indicarlo entre sus estilos*/
+    
+    field-sizing: content;
+    /*CON ESTA NUEVA PROPIEDAD, EL TAMAÑO DEL ELEMENTO SE VA A REDIMENSIONAR SEGUN EL CONTENIDO. Y SE PUEDE COMBINAR CON ALTURA MINIMA Y MAXIMA. AÚN NO ESTA DISPONIBLE PARA TODOS LOS NAVEGADORES.*/
+}
