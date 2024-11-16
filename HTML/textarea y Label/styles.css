@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    color: #eee;
+    color: #ddd;
     background-color: #222;
 }
 
@@ -42,7 +42,7 @@ input, textarea {
     border-radius: 6px;
     box-shadow: 0px 0px 15px #0001;
     background-color: transparent;
-    color: #eee;
+    color: #ddd;
 }
 
 /*Estilos especificos para el textarea*/
@@ -59,4 +59,12 @@ textarea {
     
     field-sizing: content;
     /*CON ESTA NUEVA PROPIEDAD, EL TAMAÑO DEL ELEMENTO SE VA A REDIMENSIONAR SEGUN EL CONTENIDO. Y SE PUEDE COMBINAR CON ALTURA MINIMA Y MAXIMA. AÚN NO ESTA DISPONIBLE PARA TODOS LOS NAVEGADORES.*/
+}
+
+label {
+    font-size: 0.9em;
+    /*Los labes  son elementos en linea porque lo que no podemos simplemente modificar sus margenes y darle padding.
+    Por ejemplo, margin-bottom:10px no funcionaria.
+    Una opcion es modificar otros elementos o podemos usar la propiedad line-height. Con eso, logré separar un poco el label del input*/
+    line-height: 2;
 }
