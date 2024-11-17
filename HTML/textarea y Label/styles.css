@@ -31,7 +31,7 @@ h2 {
     
 }
 
-input, textarea{
+input, textarea, select{
     /*Le damos los mismos estilos al textarea*/
     width: 100%;    
     box-sizing: border-box;
@@ -43,6 +43,12 @@ input, textarea{
     box-shadow: 0px 0px 15px #0001;
     background-color: transparent;
     color: #ddd;
+}
+
+option {
+    background-color: #222;
+    /* A los option, le damos el mismo color de fondo que al body.
+    A estos elementos no se les puede modificar ni el padding ni el margin, solo el color y el fondo.*/
 }
 
 /*Estilos especificos para el textarea*/
@@ -74,28 +80,28 @@ button {
     /*
     La propiedad display: block en CSS define cómo un elemento se comporta en el diseño del documento. Un elemento con display: block tiene las siguientes características principales:
 
-Características de display: block
-Ocupar toda la línea horizontal disponible:
+    Características de display: block
+    Ocupar toda la línea horizontal disponible:
 
-Un elemento bloque siempre comienza en una nueva línea y ocupa todo el ancho disponible de su contenedor, a menos que se limite explícitamente su tamaño con propiedades como width.
-Permite definir su tamaño con width y height:
+    Un elemento bloque siempre comienza en una nueva línea y ocupa todo el ancho disponible de su contenedor, a menos que se limite explícitamente su tamaño con propiedades como width.
+    Permite definir su tamaño con width y height:
 
-Puedes ajustar tanto el ancho como la altura del elemento.
-Ejemplos comunes de elementos bloque:
+    Puedes ajustar tanto el ancho como la altura del elemento.
+    Ejemplos comunes de elementos bloque:
 
-Por defecto, los elementos como <div>, <p>, <h1>, <section>, y <article> son de tipo bloque.
-Comparación con otros valores de display
-inline:
+    Por defecto, los elementos como <div>, <p>, <h1>, <section>, y <article> son de tipo bloque.
+    Comparación con otros valores de display
+    inline:
 
-Los elementos en línea no comienzan en una nueva línea y solo ocupan el espacio necesario para su contenido. No puedes establecer width o height en ellos.
-Ejemplo: <span>, <a>, <label>.
-inline-block:
+    Los elementos en línea no comienzan en una nueva línea y solo ocupan el espacio necesario para su contenido. No puedes establecer width o height en ellos.
+    Ejemplo: <span>, <a>, <label>.
+    inline-block:
 
-Combina comportamientos de ambos: se comporta como un elemento en línea pero respeta width y height.
-none:
+    Combina comportamientos de ambos: se comporta como un elemento en línea pero respeta width y height.
+    none:
 
-Elimina el elemento del flujo visual y no ocupa espacio en el documento.
-*/
+    Elimina el elemento del flujo visual y no ocupa espacio en el documento.
+    */
     background-color: transparent;
     color: #ddd;
     padding: 6px;

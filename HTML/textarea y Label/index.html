@@ -16,14 +16,51 @@
         </div>
        <!--  SE USA ID EN EL INPUT PARA RELACIONARLO CON EL FOR DEL LABEL. EN ESE CASO, LO QUE OCURRE ES QUE CUANDO CLIQUEAMOS EL LABEL, EL INPUT SE ENFOCADO. NECESITAN TENER EL MISMO VALOR AMBOS. 
         OTRA FORMA DE HACERLO SERIA PONIENDO EL INPUT DENTRO DEL LABEL. EN ESE CASO, NO SE USA NI ID NI FOR. SOLO TENER EN CUENTA DE QUE SI EN ALGUN MOMENTO QUEREMOS QUE EL LABEL Y EL INPUT NO ESTEN JUNTOS, HAY QUE USAR EL METODO CON FOR Y ID.-->
+        
+        
         <div class="form_input">
             <label for="mail">Correo Electrónico</label>
             <input type="email" placeholder="usuario@mail.com" id="mail">
         </div>
+
+
+       <!--  SELECT Y OPTION-->
+        <div class="form_input">
+            <label for="user">Tipo de Usuario
+                <select name="type-of-user" id="user">
+                    <option value="user1">Opción 1</option>
+                    <!-- Value es el valor que va a recibir el servidor -->
+                    <option value="user2">Opción 2</option>
+                    <option value="user3">Opción 3</option>
+                </select>
+            </label>
+        </div>
+
+
+         <!--  DATALIST Y OPTION -->
+         <div class="form_input">
+            <label>Referente
+                <input list="referente">
+                <datalist id="referente" name="referente">
+                    <option>Una pagina</option>
+                    <option>Una empresa</option>
+                    <option>Un amigo</option>
+           <!--          Se puede usar value como en el select. De hecho podemos usar value como el valor que se manda al servidor y como valor del option una descripcion. Solo tener en cuenta que solo el value se guarda. -->
+                </datalist>
+            </label>
+        </div>
+
+
         <div class="form_input">
             <label for="mensaje">Mensaje</label>
             <textarea name="" id="mensaje" placeholder="Deja tu mensaje..."></textarea>
         </div>
+    <!--     <div class="form_input">
+            <label for="">Acepto los terminos y condiciones
+                <input type="checkbox" class="checkbox">
+            </label>
+        </div> -->
+
         <div class="form_input">
             <button type="submit">Submit</button>
         </div>
