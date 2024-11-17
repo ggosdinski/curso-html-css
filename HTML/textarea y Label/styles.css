@@ -124,3 +124,13 @@ legend {
     padding: 0 6px;
     color: #777;
 }
+
+a {
+    color: #45F;
+    text-decoration: none;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
