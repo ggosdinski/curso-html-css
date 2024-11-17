@@ -10,21 +10,21 @@
     
     <form action="">
         <h2>Formulario de Contacto</h2>
-        <div class="form_input">
-            <label for="nombre">Nombre Completo</label>
-            <input type="text" placeholder="John Doe" id="nombre" >
-        </div>
-       <!--  SE USA ID EN EL INPUT PARA RELACIONARLO CON EL FOR DEL LABEL. EN ESE CASO, LO QUE OCURRE ES QUE CUANDO CLIQUEAMOS EL LABEL, EL INPUT SE ENFOCADO. NECESITAN TENER EL MISMO VALOR AMBOS. 
-        OTRA FORMA DE HACERLO SERIA PONIENDO EL INPUT DENTRO DEL LABEL. EN ESE CASO, NO SE USA NI ID NI FOR. SOLO TENER EN CUENTA DE QUE SI EN ALGUN MOMENTO QUEREMOS QUE EL LABEL Y EL INPUT NO ESTEN JUNTOS, HAY QUE USAR EL METODO CON FOR Y ID.-->
-        
-        
-        <div class="form_input">
-            <label for="mail">Correo Electrónico</label>
-            <input type="email" placeholder="usuario@mail.com" id="mail">
-        </div>
+        <fieldset>
+            <legend>INFORMACIÓN BÁSICA</legend>
+                <div class="form_input">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" placeholder="John Doe" id="nombre" >
+            </div>
+           <!--  SE USA ID EN EL INPUT PARA RELACIONARLO CON EL FOR DEL LABEL. EN ESE CASO, LO QUE OCURRE ES QUE CUANDO CLIQUEAMOS EL LABEL, EL INPUT SE ENFOCADO. NECESITAN TENER EL MISMO VALOR AMBOS. 
+            OTRA FORMA DE HACERLO SERIA PONIENDO EL INPUT DENTRO DEL LABEL. EN ESE CASO, NO SE USA NI ID NI FOR. SOLO TENER EN CUENTA DE QUE SI EN ALGUN MOMENTO QUEREMOS QUE EL LABEL Y EL INPUT NO ESTEN JUNTOS, HAY QUE USAR EL METODO CON FOR Y ID.-->
+            <div class="form_input">
+                <label for="mail">Correo Electrónico</label>
+                <input type="email" placeholder="usuario@mail.com" id="mail">
+            </div>       
+        </fieldset>
 
-
-       <!--  SELECT Y OPTION-->
+        <!--  SELECT Y OPTION-->
         <div class="form_input">
             <label for="user">Tipo de Usuario
                 <select name="type-of-user" id="user">
@@ -50,7 +50,7 @@
             </label>
         </div>
 
-
+        <!-- TEXTAREA -->
         <div class="form_input">
             <label for="mensaje">Mensaje</label>
             <textarea name="" id="mensaje" placeholder="Deja tu mensaje..."></textarea>
