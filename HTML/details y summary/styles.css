@@ -1,0 +1,23 @@
+body {
+    background-color: #333;
+    color: #ddd;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+details {
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+summary {
+    background-color: transparent;
+}
+
+p , li{
+    font-size: 0.9em;
+    font-style: italic;
+    color: #aaa;
+}
+
