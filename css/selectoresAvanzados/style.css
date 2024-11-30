@@ -1,0 +1,49 @@
+/*  SELECCIONAR POR ATRIBUTOS */
+/* SELECCIONAR UNA IMAGEN QUE TENGA UN SRC ESPECIFICO */
+/* img[src="fotoperfil.jpeg"]{
+    width: 100%;
+} */
+
+/* SELECCIONAR UNA IMAGEN QUE TENGA UN EXTENSIÓN ESPECIFICA */
+/* img[src$="jpeg"]{
+    width: 100%;
+} */
+
+/* SELECCIONAR UNA IMAGEN QUE EMPIECE CON ALGO ESPECIFICO */
+img[src^="foto"]{
+    width: 100%;
+}
+
+/* SELECCION DESCENDIENTE */
+/* seleccionar solo los li que estan adentro del ul */
+/* ul li{
+    color: red;
+    SOLO DOY ESTILOS A LOS LI DENTRO DEL UL
+}
+ */
+
+/*  ul strong{
+    color: red;
+    SOLO LE DOY ESTILOS AL STRONG DENTRO DEL UL
+}
+ */
+
+ ul > strong{
+    color: red;
+    /* DE ESTA MANERA ESTAMOS DANDO ESTILO A UN STRONG QUE SEA HIJO DIRECTO DE UN UL. NO BASTA CON QUE ESTE ADENTRO, DEBE SER HIJO */
+}
+
+/* SELECTOR DE HERMANO ADYACENTE
+Seleciona al elemento que esta al lado, a continuación, el hermano.  */
+
+h1 + p{
+    color: blue;
+/* EL P QUE LE SIGA A UN H1, RECIBE ESTE ESTILO */
+}
+
+/* SELECTOR DE HERMANOS GENERALES
+SELECCIONA TODOS LOS ELEMENTOS QUE VIENEN A CONTINUACION, EN ESTE CASO, TODOS LOS P QUE VIENEN DESPUES DEL H1 Y NO SOLO EL PRIMERO COMO EL CASO ANTERIOR */
+h1 ~ p{
+    color: blue;
+}
+
