@@ -1,0 +1,23 @@
+body {
+    background-color: #ededed;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+    
+}
+
+.box--blue{
+    background-color: blue;
+    top:70px;
+    left: 40px;
+    z-index: 1;
+    /* LAS CAJAS SE POSICIONAN UNA ENCIMA DE LA OTRA, COMO CAPAZ, SEGUN EL ORDEN DE SU CREACION.
+    CON Z INDEX, PODEMOS HACER QUE UNA CAJA QUE DEBERIA VERSE ATRAS DE OTRA (POR EL ORDEN) SE VEA POR ENCIMA */
+}
+
