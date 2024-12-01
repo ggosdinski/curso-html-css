@@ -1,0 +1,136 @@
+/* body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.modal {
+    position: absolute;
+    background-color: #0009;
+    width: 100vw;
+    height: 100vh;
+} 
+
+.modal__content{
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 550px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.modal__title{
+    margin-top: 10px;
+}
+
+.modal__close-button {
+    position: absolute;
+    color: #fff;
+    background-color: #000;
+    padding: 4px 12px;
+    border-radius: 8px;
+    top:0;
+    right: 0;
+} */
+
+
+
+/* MEJORA HECHA CON CHATGPT */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Modal Background */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Modal Content */
+.modal__content {
+    background-color: #fff;
+    padding: 20px 30px;
+    width: 90%;
+    max-width: 500px;
+    bottom: 200px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.9s ease-in-out;
+}
+
+/* Title */
+.modal__title {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Text */
+.modal__text {
+    font-size: 16px;
+    color: #555;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+/* Link */
+.modal__text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.modal__text a:hover {
+    text-decoration: underline;
+}
+
+/* Close Button */
+.modal__close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.modal__close-button:hover {
+    background-color: #ff3d3d;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
