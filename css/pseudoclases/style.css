@@ -1,0 +1,30 @@
+h1 {
+    color: #48e;
+    font-family: sans-serif;
+}
+
+h1:hover{
+    color: black;
+}
+
+
+h1:active{
+    color: green;
+   /*  CUANDO LE DOY CLICK AL ELEMENTO, PASA A COLOR VERDE */
+}
+
+/* SELECCIONAR EL PRIMER Y EL ULTIMO ELEMENTO */
+li:first-child {
+    color: red;
+ }
+
+li:last-child{
+    color: violet;
+ }
+/* 
+SELECCIONAR A OTRO ELEMENTO, POR EJEMPLO EL TERCERO
+ */
+li:nth-child(3){
+    color: green;
+}
+
