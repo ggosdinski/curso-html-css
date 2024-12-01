@@ -1,23 +1,48 @@
 body {
-    background-color: #ededed;
+    background-color: #5d6d7e;
 }
+
+.contenedor{
+    border: 2px solid black;
+    margin: 10px;
+    background-color: #d7dbdd;
+    position: relative;
+}
+
 .box {
-    width: 100px;
-    height: 100px;
-    background-color: orange;
+    width: 180px;
+    height: 180px;
+    background-color: #f5b041;
     color: #fff;
     text-align: center;
-    line-height: 100px;
-    position: relative;
+    line-height: 180px;
+  /*   position: relative; */
     
 }
 
 .box--blue{
-    background-color: blue;
-    top:70px;
+    background-color: #21618c;
+  /*   top:70px;
     left: 40px;
-    z-index: 1;
+    z-index: 1; */
     /* LAS CAJAS SE POSICIONAN UNA ENCIMA DE LA OTRA, COMO CAPAZ, SEGUN EL ORDEN DE SU CREACION.
     CON Z INDEX, PODEMOS HACER QUE UNA CAJA QUE DEBERIA VERSE ATRAS DE OTRA (POR EL ORDEN) SE VEA POR ENCIMA */
+
+    position: absolute;
+    /* POSITION ABSOLUTE NO OCUPA LUGAR EN LA PAGINA Y NO FORMA PARTE DE SU FLUJO . CUANDO USAMOS ESTA POSICION, EL PUNTO DE REFERENCIA QUE VA A USAR ES LA ETIQUETA HTML. (por eso el top y left 0 se van hasta las esquindas
+    
+    ADEMAS, AL COMBINARLO CON UN POSITION RELATIVE EN EL ELEMENTO CONTENEDOR, PODEMOS MODIFICAR ESE COMPORTAMIENTO PARA QUE EL CONTENEDOR SEA LA REFERENCIA Y NO LA ETIQUETA HTML. Esto ocurre porque el contenedor tiene position relative. Si lo elimino, la referencia vuelve a ser el html.*/
+    /* top: 20px; */
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    /* si tiene right, top, left, bottom en 0 y el margin en auto, el elemento se va a centrar dentro de su contenedor. */
 }
 
+.box--red{
+    background-color: #e74c3c;
+}
+
+/* EN RESUMEN, POSITION RELATIVE TOMA COMO REFERENCIA LA POSICION ORIGINAL DEL ELEMENTO Y SE MUEVE DESDE AHI Y CREA UN CONTEXTO DE APILAMIENTO EN EL QUE PODEMOS MOVER LAS CAPAS DE ADELANTE HACIA ATRA CON EL Z-INDEX. Los elemntos conservan su espacio. POSITION ABSOLUTE, TOMA COMO REFERENCIA LA ETIQUETA HTML O EN SU DFECTO A SU CONTENEDOR Y SE MUEVE DESDE ALLI. Los elementos pierden syu espacio */
