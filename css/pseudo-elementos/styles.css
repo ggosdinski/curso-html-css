@@ -1,0 +1,43 @@
+div{
+    padding: 20px;
+}
+
+/* SELECCIONAR LA PRIMER LETRA */
+h1::first-letter{
+    font-size: 48px;
+    color: red; 
+    letter-spacing: -7px;
+}
+
+/* MODIFICAR LA PRIMER LINEA DE UN ELEMENTO, EN ESTE CASO, ES LA PRIMERA LINEA DE TEXTO DENTRO DEL DIV */
+div::first-line{
+    color: red;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: '☑️';
+    /* ESTO NO ES UN PSEUDO-ELEMENTO PERO ME PERMITE CAMBIAR LOS MARCADORES DE LA LISTA POR LO QUE YO QUIERA, COMO UN EMOJI */
+}
+
+/* ESTILAMOS CUANDO UN ELEMENTO ES SELECCIONADO CON EL MOUSE */
+li::selection{
+    background-color: antiquewhite;
+}
+
+/* ESTILAMOS LOS . DE LA LISTA */
+li::marker{
+    color: red;
+}
+
+/* AGREGAR UN TEXTO ANTES Y DESPUÉS DEL ELEMENTO */
+li::before{
+    content: "Texto antes - ";
+    color: red;
+}
+
+li::after{
+    content: " - Texto después";
+    color: blue;
+}
+
